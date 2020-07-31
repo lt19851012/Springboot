@@ -15,5 +15,9 @@ public class UserServiceImpl {
 	public List<User> findUsers() {
 		return userdao.findUsers();
 	}
+	
+	public User findUserByNamePwd(String username, String password) {
+		return userdao.findUserByNamePwd(username, password);
+	}
 
 }

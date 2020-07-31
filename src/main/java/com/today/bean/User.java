@@ -3,8 +3,8 @@ package com.today.bean;
 import java.io.Serializable;
 import java.util.Date;
 
+
 public class User implements Serializable {
-	
 	private int id;
 	private int sys_type;
 	private	String username;

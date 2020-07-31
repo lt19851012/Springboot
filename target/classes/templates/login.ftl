@@ -17,7 +17,7 @@
 
         </div>
         <hr style="margin: 0px;"/>
-    <#--<h3 style="color: #222d32">填写以下信息，完成登录：</h3>margin-bottom-->
+    	
     <div class="divider" style="float: left; margin-bottom: 30px;width: 100%;height:3px;background: #fff;background: rgba(255, 255, 255, 0.8);"></div>
     <input style="display: inline-block;" type="hidden" value=${request.contextPath}  name= "contextPath" id="contextPath"/>
     <form name="fm" style="padding:0px 50px;">
@@ -57,17 +57,17 @@
 
 	    	$("#login").click(function() {
 	    		var username = $("#username").val();
-	    		var pwd = $("#password").val();
-	    		if (username == "" || pwd == "") {
+	    		var password = $("#password").val();
+	    		if (username == "" || password == "") {
 	    			bootbox.alert("用户名、密码不能为空");
 	    			return false;
 	    		}
 	    		//对数据加密
-	    		$("#password").prop('type','password');
+	    		//$("#password").prop('type','password');
 	    		//var username = encode64($("#username").val());
-    			var password = encode64($("#password").val());
+    			//var password = encode64($("#password").val());
     			//$("#username").val(username);
-	            $("#password").val(password);
+	           	// $("#password").val(password);
 	            //document.fm.submit();
 	            
 	            $.ajax({
